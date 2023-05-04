@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(express.static("public"))
 app.use(cookieParser())
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://makeover-appointment-production.up.railway.app",
     credentials: true
 }))
 app.use("/employee", require("./routes/employeeRoutes"))
