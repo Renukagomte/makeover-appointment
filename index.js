@@ -12,7 +12,8 @@ app.use(express.json())
 app.use(express.static("public"))
 app.use(cookieParser())
 app.use(cors({
-    origin: "https://makeover-appointment-production.up.railway.app",
+    // origin: "http://localhost:5173",
+    origin: "https://makeover-appointment.onrender.com/",
     credentials: true
 }))
 app.use("/employee", require("./routes/employeeRoutes"))
